@@ -1,4 +1,0 @@
-# do not format JSX files
-# since the parser is very old and can fail
-# parsing reformatted files
-js/*.jsx
