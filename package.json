@@ -4,17 +4,24 @@
   "version": "0.0.0-development",
   "description": "Example TodoMVC app with E2E tests living in a separate repo",
   "scripts": {
-    "start": "http-server -p 8888 -c-1",
-    "start:ci": "http-server -p 8888 -c-1 --silent"
+    "start": "react-scripts start",
+    "build": "react-scripts build"
   },
   "dependencies": {
-    "director": "1.2.8",
-    "http-server": "0.12.3",
-    "react": "0.13.3",
-    "todomvc-app-css": "2.3.0",
-    "todomvc-common": "cypress-io/todomvc-common#88b7c6359ad4a5097312d8b2a21dd539ce9f4446"
+    "react": "16",
+    "react-dom": "16",
+    "react-scripts": "3.2"
   },
   "devDependencies": {
     "prettier": "2.2.1"
-  }
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
