@@ -13,7 +13,7 @@
     "react-scripts": "3.2"
   },
   "devDependencies": {
-    "netlify-plugin-github-dispatch": "1.0.3",
+    "netlify-plugin-github-dispatch": "1.1.0",
     "prettier": "2.2.1"
   },
   "eslintConfig": {

@@ -11,6 +11,6 @@ jobs:
           authToken: ${{secrets.GITHUB_TOKEN}}
           context: 'E2E tests'
           description: 'Tests pending deploy'
-          state: 'pending'
           # success, error, failure, or pending
+          state: 'pending'
           sha: ${{github.event.pull_request.head.sha}}
