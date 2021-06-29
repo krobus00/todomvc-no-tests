@@ -3,6 +3,8 @@ import './App.css'
 
 export function Todo({ todo, index, toggleTodo, removeTodo }) {
   const toggleText = todo.isCompleted ? 'Redo' : 'Complete'
+  const cyAttribute = todo.isCompleted ? 'redo' : 'complete'
+
   return (
     <div
       className="todo"
@@ -11,7 +13,9 @@ export function Todo({ todo, index, toggleTodo, removeTodo }) {
       {todo.text}
 
       <div>
-        <button onClick={() => toggleTodo(index)}>{toggleText}</button>
+        <button data-cy={cyAttribute} onClick={() => toggleTodo(index)}>
+          {toggleText}
+        </button>
         <button data-cy="remove" onClick={() => removeTodo(index)}>
           x
         </button>
@@ -35,6 +39,7 @@ export function TodoForm({ addTodo }) {
       <input
         type="text"
         className="input"
+        data-cy="new-todo"
         value={value}
         onChange={(e) => setValue(e.target.value)}
       />
