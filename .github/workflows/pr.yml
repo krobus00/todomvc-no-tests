@@ -8,7 +8,7 @@ jobs:
       - name: set pending status
         uses: Sibz/github-status-action@v1
         with:
-          authToken: ${{secrets.GITHUB_TOKEN}}
+          authToken: ${{secrets.PERSONAL_ACCESS_TOKEN}}
           context: 'E2E tests'
           description: 'Tests pending deploy'
           # success, error, failure, or pending
