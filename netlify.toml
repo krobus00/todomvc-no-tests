@@ -2,6 +2,6 @@
 [[plugins]]
   package = "netlify-plugin-github-dispatch"
   [plugins.inputs]
-    owner = "bahmutov" # use the target organization name
+    owner = "krobus00" # use the target organization name
     repo = "todomvc-tests" # use the target repo name
     workflow = ".github/workflows/e2e.yml" # use workflow relative path
