@@ -1,4 +1,4 @@
-# https://github.com/bahmutov/netlify-plugin-github-dispatch
+# https://github.com/krobus00/netlify-plugin-github-dispatch
 [[plugins]]
   package = "netlify-plugin-github-dispatch"
   [plugins.inputs]
