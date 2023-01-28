@@ -10,7 +10,7 @@ jobs:
         with:
           authToken: ${{secrets.PERSONAL_ACCESS_TOKEN}}
           context: 'E2E tests'
-          description: 'Tests pending deploy update'
+          description: 'Tests pending deploy update 1'
           # success, error, failure, or pending
           state: 'pending'
           sha: ${{github.event.pull_request.head.sha}}
